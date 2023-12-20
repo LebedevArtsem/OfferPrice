@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OfferPrice.Catalog.Domain\OfferPrice.Catalog.Domain.csproj" />
+    <ProjectReference Include="..\OfferPrice.Catalog.Infrastucture\OfferPrice.Catalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\OfferPrice.Common\OfferPrice.Common.csproj" />
+    <ProjectReference Include="..\OfferPrice.Events.RabbitMq\OfferPrice.Events.RabbitMq.csproj" />
+    <ProjectReference Include="..\OfferPrice.Events\OfferPrice.Events.csproj" />
+  </ItemGroup>
+
+</Project>

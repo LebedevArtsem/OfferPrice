@@ -1,0 +1,110 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/api/v1/auth/login",
+            "UpstreamHttpMethod": [ "Post" ],
+            "DownstreamPathTemplate": "/api/v1/auth/login",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5021
+                }
+            ],
+            "SwaggerKey": "profile"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/auth/registration",
+            "UpstreamHttpMethod": [ "Post" ],
+            "DownstreamPathTemplate": "/api/v1/auth/registration",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5021
+                }
+            ],
+            "SwaggerKey": "profile"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/auth/double_authentication",
+            "UpstreamHttpMethod": [ "Post" ],
+            "DownstreamPathTemplate": "/api/v1/auth/double_authentication",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5021
+                }
+            ],
+            "SwaggerKey": "profile",
+            "DelegatingHandlers": [
+                "AuthorizationHandler"
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/auth/double_authentication",
+            "UpstreamHttpMethod": [ "Patch" ],
+            "DownstreamPathTemplate": "/api/v1/auth/double_authentication",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5021
+                }
+            ],
+            "SwaggerKey": "profile"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/users",
+            "UpstreamHttpMethod": [ "Get", "Put" ],
+            "DownstreamPathTemplate": "/api/v1/users",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5021
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "profile"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/notifications",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/v1/notifications",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5021
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "profile"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/notifications/{everything}",
+            "UpstreamHttpMethod": [ "Put" ],
+            "DownstreamPathTemplate": "/api/v1/notifications/{everything}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5021
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "profile"
+        }
+    ]
+}

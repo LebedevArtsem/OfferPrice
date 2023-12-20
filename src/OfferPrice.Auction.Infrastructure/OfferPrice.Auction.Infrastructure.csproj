@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OfferPrice.Auction.Domain\OfferPrice.Auction.Domain.csproj" />
+    <ProjectReference Include="..\OfferPrice.Common\OfferPrice.Common.csproj" />
+    <ProjectReference Include="..\OfferPrice.Events.RabbitMq\OfferPrice.Events.RabbitMq.csproj" />
+    <ProjectReference Include="..\OfferPrice.Events\OfferPrice.Events.csproj" />
+  </ItemGroup>
+
+</Project>

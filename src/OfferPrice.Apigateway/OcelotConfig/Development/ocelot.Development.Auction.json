@@ -1,0 +1,98 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/api/v1/lots",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/v1/lots",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5011
+                }
+            ],
+            "SwaggerKey": "auction"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/lots/{lotId}/comments",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/v1/lots/{lotId}/comments",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5011
+                }
+            ],
+            "SwaggerKey": "auction"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/lots/{id}",
+            "UpstreamHttpMethod": [ "Get", "Delete" ],
+            "DownstreamPathTemplate": "/api/v1/lots/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5011
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "auction"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/lots/{id}/raise_bet",
+            "UpstreamHttpMethod": [ "Post" ],
+            "DownstreamPathTemplate": "/api/v1/lots/{id}/raise_bet",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5011
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "auction"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/lots/{lotId}/comments",
+            "UpstreamHttpMethod": [ "Post" ],
+            "DownstreamPathTemplate": "/api/v1/lots/{lotId}/comments",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5011
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "auction"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/lots/{lotId}/comments/{commentId}",
+            "UpstreamHttpMethod": [ "Post" ],
+            "DownstreamPathTemplate": "/api/v1/lots/{lotId}/comments/{commentId}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5011
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "auction"
+        }
+    ]
+}

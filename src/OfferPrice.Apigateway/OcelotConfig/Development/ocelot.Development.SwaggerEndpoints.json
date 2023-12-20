@@ -1,0 +1,59 @@
+{
+    "SwaggerEndPoints": [
+        {
+            "Key": "gateway",
+            "TransformByOcelotConfig": false,
+            "Config": [
+                {
+                    "Name": "Gateway API",
+                    "Version": "v1",
+                    "Url": "https://localhost:7165/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "profile",
+            "TransformByOcelotConfig": true,
+            "Config": [
+                {
+                    "Name": "Profile API",
+                    "Version": "v1",
+                    "Url": "https://localhost:5021/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "catalog",
+            "TransformByOcelotConfig": true,
+            "Config": [
+                {
+                    "Name": "Catalog API",
+                    "Version": "v1",
+                    "Url": "https://localhost:5001/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "auction",
+            "TransformByOcelotConfig": true,
+            "Config": [
+                {
+                    "Name": "Auction API",
+                    "Version": "v1",
+                    "Url": "https://localhost:5011/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "payment",
+            "TransformByOcelotConfig": true,
+            "Config": [
+                {
+                    "Name": "Payment API",
+                    "Version": "v1",
+                    "Url": "https://localhost:7284/swagger/v1/swagger.json"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/api/v1/products/{productId}/likes/for/{userId}",
+            "UpstreamHttpMethod": [ "Delete" ],
+            "DownstreamPathTemplate": "/api/v1/products/{productId}/likes/for/{userId}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "catalog"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/products/{productId}/likes/{everything}",
+            "UpstreamHttpMethod": [ "Get", "Post" ],
+            "DownstreamPathTemplate": "/api/v1/products/{productId}/likes/{everything}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "catalog"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/products",
+            "UpstreamHttpMethod": [ "Post" ],
+            "DownstreamPathTemplate": "/api/v1/products",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "catalog"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/products/{id}",
+            "UpstreamHttpMethod": [ "Put" ],
+            "DownstreamPathTemplate": "/api/v1/products/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "Bearer",
+                "AllowedScopes": []
+            },
+            "SwaggerKey": "catalog"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/products",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/v1/products",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "SwaggerKey": "catalog"
+        },
+        {
+            "UpstreamPathTemplate": "/api/v1/products/{id}",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/v1/products/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "SwaggerKey": "catalog"
+        }
+    ]
+}
